@@ -6,9 +6,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('try_example') {
       steps {
-        echo 'Build stage executing'
+        echo 'job executing'
       }
     }
   }
