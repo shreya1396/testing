@@ -1,5 +1,5 @@
 @Library("testing-library") _
-    Install_go {
+    Install_dependencies {
         projectName = "Project1"
         serverDomain = "Project1 Server Domain"
     }
