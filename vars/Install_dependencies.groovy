@@ -13,7 +13,7 @@ def call(body) {
                 stage ('Clone') {
                     checkout scm
                 }
-                stage ('Install-go') {
+                stage ('Install-dependencies') {
                     sh "apt-get update"
                     sh "apt-get install go"
                     sh "apt-get install maven"
