@@ -6,9 +6,19 @@
 pipeline {
   agent any
   stages {
-    stage('try_example') {
+    stage('Build') {
       steps {
-        echo 'job executing'
+        echo 'build stage is executing'
+      }
+    }
+      stage('Test') {
+      steps {
+        echo 'Test stage is executing'
+      }
+    }
+      stage('Verify') {
+      steps {
+        echo 'Verify stage is executing'
       }
     }
   }
